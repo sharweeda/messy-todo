@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title> ToDo</title>
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Anton&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/all.min.css">
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+  <section class="container w-100 text-center my-4 ">
+    <h1 class="text-center fw-bold fa-2xl my-5">ToDo Tasks</h1>
+    <div class="row justify-content-center mx-4">
+      <form action="" class="col-12 col-md-10 col-lg-8 bg-white rounded p-4 shadow-lg" onsubmit="addTask(event)">
+        <div class="d-flex flex-column flex-md-row gap-3">
+          <input type="text" id="taskInput" class="form-control" placeholder="Task to be done..." />
+          <button type="submit" class="add-task btn btn-outline-primary text-nowrap">Add Task</button>
+        </div>
+      </form>
+    </div>
+    <ul id="taskList" class="task-container my-5 p-4 bg-white rounded shadow-lg"></ul>
+  </section>
+    <script src="Js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
