@@ -18,7 +18,7 @@ function addTask(event) {
     Swal.fire({
       icon: "success",
       title: "Task Added!",
-      text: `The task "${taskName}" was added successfully.`,
+      text: `The"${taskName}" was added successfully.`,
       timer: 1500,
       showConfirmButton: false,
     });
@@ -77,7 +77,7 @@ function toggleTask(taskId) {
     Swal.fire({
       icon: "info",
       title: task.isDone ? "Task Completed!" : "Task Reverted!",
-      text: `The task "${task.name}" has been ${task.isDone ? "marked as done" : "reverted to incomplete"}.`,
+      text: `The"${task.name}" has been ${task.isDone ? "marked as done" : "reverted to incomplete"}.`,
       timer: 1500,
       showConfirmButton: false,
     });
@@ -103,7 +103,7 @@ async function deleteTask(taskId) {
       Swal.fire({
         icon: "success",
         title: "Task Deleted!",
-        text: `The task "${task.name}" was deleted successfully.`,
+        text: `The"${task.name}" was deleted successfully.`,
         timer: 1500,
         showConfirmButton: false,
       });
