@@ -11,23 +11,26 @@
   <link rel="stylesheet" href="CSS/all.min.css">
   <link rel="stylesheet" href="CSS/Style.css">
 </head>
-<body class="m-0 p-0" style="background: #8e24aa;">
+<body class="m-0 p-0" style="background: #040105;">
   
-    <section class="d-flex justify-content-center align-items-center min-vh-100">
-      <div class="container text-center">
-        <h1 class="fw-bold text-white my-4">ToDo Tasks</h1>
-        <form action="" class="w-100 w-md-75 w-lg-50 bg-white rounded p-4 shadow-lg mx-auto"
-        onsubmit="addTask(event)">
+  <section class="d-flex">
+    <div class="container text-center">
+      <h1 class="fw-bold my-4 text-primary">ToDo App</h1>
+      <form action="" class="w-100 w-md-75 w-lg-50 bg-white rounded p-4 shadow-lg mx-auto"
+      onsubmit="addTask(event)">
         <div class="d-flex flex-column flex-md-row gap-3">
-          <input type="text" id="taskInput" class="form-control" placeholder="Task to be done..." />
+          <input type="text" id="taskInput" class="form-control bg-info-subtle  " placeholder="Task to be done..." />
           <button type="submit" class="btn btn-outline-primary text-nowrap">Add Task</button>
         </div>
-        </form>
-  
-        <ul id="taskList" class="task-container w-100 w-md-75 w-lg-50 my-4 p-4 bg-white rounded shadow-lg mx-auto"></ul>
+      </form>
+      <ul id="taskList" class="task-container w-75 w-md-75 w-lg-50 my-4 p-4 bg-white rounded shadow-lg mx-auto bg-info-subtle"></ul>
+      <div id="deleteAllContainer" class="w-100 w-md-75 w-lg-50 mx-auto text-center my-3">
+        <button  id="deleteAllBtn" class="btn btn-danger" onclick="deleteAllTasks()">
+          <i class="fas fa-trash-alt me-2"></i>Delete All Tasks
+        </button>
       </div>
-    </section>
-  
+    </div>
+  </section>
   
     <script src="Js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
